@@ -1,0 +1,24 @@
+local colors = {
+    SchemeColor = Color3.fromRGB(48,0,48),
+    Background = Color3.fromRGB(0, 0, 0),
+    Header = Color3.fromRGB(0, 0, 0),
+    TextColor = Color3.fromRGB(48,0,48),
+    ElementColor = Color3.fromRGB(44, 0, 44)
+}
+local Window = Library.CreateLib("PhantomScript", colors)
+
+--MAIN
+local main = Window:NewTab("main")
+local mainSection = main:NewSection("main")
+
+mainSection:NewButton("ESP", "All seeing", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SoullessScript/SoullessScript/refs/heads/main/SSV1",true))()
+end)
+
+mainSection:NewButton("AIMBOT", "Never miss", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua",true))()
+end)
+
+mainSection:NewButton("universal", "Never miss", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SoullessScript/SoullessScript/refs/heads/main/SSV1b",true))()
+end)
